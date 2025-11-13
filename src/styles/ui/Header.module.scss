@@ -19,6 +19,7 @@ $color_11_shade: #fcf6ee;
     padding: 0 1rem;
     box-sizing: border-box;
 
+
     .header_container {
         width: 100%;
         height: 100%;
@@ -51,6 +52,11 @@ $color_11_shade: #fcf6ee;
                     padding: 0.1rem 0.5rem;
                     box-sizing: border-box;
                     color: #fcf6ee;
+
+                    @media (max-width: 650px) {
+                        font-size: 1rem;
+                        letter-spacing: 2px;
+                    }
                 }
             }
 
@@ -58,6 +64,10 @@ $color_11_shade: #fcf6ee;
                 display: flex;
                 align-items: center;
                 gap: 2.5rem;
+
+                @media (max-width: 900px) {
+                    display: none;
+                }
 
                 .header_routing_items {
                     letter-spacing: 1px;
@@ -89,8 +99,13 @@ $color_11_shade: #fcf6ee;
                 color: #fcf6ee;
                 border-radius: 10px;
                 font-family: 'PitagonSansMono';
-                font-size: 1.1em;
+                font-size: 1rem;
                 cursor: pointer;
+
+                @media (max-width: 650px) {
+                    padding: 0.1rem 0.5rem;
+                    font-size: 1rem;
+                }
             }
         }
     }
