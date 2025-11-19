@@ -16,7 +16,14 @@ $color_11_shade: #fcf6ee;
     height: auto;
     background-color: #111;
     padding: 1rem 2rem;
+    padding: 2rem;
     box-sizing: border-box;
+
+    @media (max-width: 500px) {
+        padding: 0.5rem 1rem;
+        padding-bottom: 1rem;
+
+    }
 
     .footer_container {
         width: 100%;
@@ -34,7 +41,7 @@ $color_11_shade: #fcf6ee;
 
             p {
                 font-family: 'GeistMono';
-                font-size: 1em;
+                font-size: clamp(0.6rem, 0.5em, 1.2rem);
             }
         }
     }

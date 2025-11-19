@@ -11,6 +11,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 1rem;
+    box-sizing: border-box;
 
     .modal_window_span_open,
     .modal_window_span_close {
@@ -60,7 +62,7 @@
                 h1 {
                     width: 100%;
                     font-family: 'PitagonSansMono';
-                    font-size: 2.5em;
+                    font-size: clamp(1.5rem, 1.5em, 2rem);
                     color: #fcf6ee;
                 }
 

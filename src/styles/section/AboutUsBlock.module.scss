@@ -13,21 +13,31 @@ $color_11_shade: #fcf6ee;
 
 .about_us_block {
     width: 100%;
-    height: 115vh;
-    padding: 2rem;
+    height: fit-content;
+    padding: 1rem 2rem;
     box-sizing: border-box;
     background-color: transparent;
 
+    @media (max-width: 500px) {
+        padding: 0.5rem 1rem;
+
+    }
+
     .about_us_container {
         width: 100%;
-        height: 100%;
+        height: fit-content;
         background-color: #222;
         border-radius: 20px;
         padding: 2rem;
         box-sizing: border-box;
         display: grid;
-        grid-template-rows: 1fr 0.8fr;
+        grid-template-rows: 1fr 0.2fr;
         gap: 1rem;
+
+        @media (max-width: 1200px) {
+            grid-template-rows: 1fr;
+
+        }
 
         .about_us_block_top,
         .about_us_block_bottom {
@@ -39,6 +49,10 @@ $color_11_shade: #fcf6ee;
             display: grid;
             grid-template-columns: 2fr 1fr;
             gap: 1rem;
+
+            @media (max-width: 1200px) {
+                grid-template-columns: 1fr;
+            }
 
             .about_us_block_top_left,
             .about_us_block_top_right {
@@ -56,7 +70,7 @@ $color_11_shade: #fcf6ee;
                     h1 {
                         font-family: 'Antosha';
                         text-transform: uppercase;
-                        font-size: 9em;
+                        font-size: clamp(1rem, 4em, 5rem);
                     }
                 }
 
@@ -66,12 +80,17 @@ $color_11_shade: #fcf6ee;
 
                     p {
                         font-family: 'PitagonSansMono';
-                        font-size: 1.2em;
+                        font-size: clamp(0.9rem, 0.5em, 1.2rem);
+                        hyphens: auto;
                     }
                 }
             }
 
             .about_us_block_top_right {
+                @media (max-width: 1200px) {
+                    display: none;
+                }
+
                 .about_us_block_top_right_logo {
                     width: 100%;
                     height: 100%;
@@ -83,6 +102,12 @@ $color_11_shade: #fcf6ee;
         }
 
         .about_us_block_bottom {
+            width: 100%;
+            height: 100%;
+
+            @media (max-width: 1200px) {
+                display: none;
+            }
 
             .about_us_block_bottom_text {
                 color: #fcf6ee;

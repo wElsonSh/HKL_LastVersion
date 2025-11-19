@@ -85,6 +85,7 @@ $color_11_shade: #fcf6ee;
 
                             max-width: 18rem;
                             height: fit-content;
+                            max-height: 50rem;
                             background-color: #6286a381;
                             backdrop-filter: blur(3px);
                             padding: 1rem;
@@ -105,6 +106,8 @@ $color_11_shade: #fcf6ee;
                                 @media (max-width: 650px) {
                                     font-size: clamp(1rem, 5vw, 5rem);
                                 }
+
+                                hyphens: auto;
                             }
 
                             .welcom_block_about_us_btn_container {
