@@ -79,7 +79,6 @@ export function ServicesBlock() {
                                 key={works_img_arr.id}
                                 style={{ 'background-image': `url(${item.url})` }}
                             >
-
                             </li>
                         ))}
                     </ul>
